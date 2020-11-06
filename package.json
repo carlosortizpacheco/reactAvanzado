@@ -4,8 +4,14 @@
   "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
   "main": "index.js",
   "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.4.0",
+    "intersection-observer": "^0.11.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-apollo": "^3.1.5",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "styled-components": "^5.2.1"
   },
   "standard": {
     "ignore": [
@@ -13,12 +19,17 @@
     ]
   },
   "eslintConfig": {
-    "extends": ["./node_modules/standard/eslintrc.json"]
+    "parser": "babel-eslint",
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.5.0",
     "standard": "^16.0.1",
